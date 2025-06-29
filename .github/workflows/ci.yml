@@ -29,15 +29,6 @@ jobs:
       - name: Display .NET info (debug step)
         run: dotnet --info
 
-      - name: Add packages 1
-        run: dotnet add package Microsoft.NET.Test.Sdk --version 17.10.0
-
-      - name: Add packages 2
-        run: dotnet add package xunit
-
-      - name: Add packages 3
-        run: add package xunit.runner.visualstudio
-
       - name: Restore dependencies
         run: dotnet restore
 
