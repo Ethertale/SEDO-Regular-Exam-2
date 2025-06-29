@@ -35,5 +35,8 @@ jobs:
       - name: Build project
         run: dotnet build --configuration Release --no-restore
 
-      - name: Run tests
-        run: dotnet test Horizons.sln --no-build --verbosity normal
+      - name: Run Unit Tests
+        run: dotnet test Horizons.Tests.Unit/Horizons.Tests.Unit.csproj --no-build --verbosity normal
+
+      - name: Run Integration Tests
+        run: dotnet test Horizons.Tests.Integration/Horizons.Tests.Integration.csproj --no-build --verbosity normal
