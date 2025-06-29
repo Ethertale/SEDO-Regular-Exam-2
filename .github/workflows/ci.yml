@@ -26,6 +26,9 @@ jobs:
         with:
           dotnet-version: '8.0.x'
 
+      - name: Display .NET info (debug step)
+        run: dotnet --info
+
       - name: Restore dependencies
         run: dotnet restore
 
